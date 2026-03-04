@@ -1,19 +1,24 @@
 {
   "name": "blackroad-ai-dashboard",
-  "version": "1.0.0",
-  "description": "BlackRoad AI Agent Network Dashboard - Interact with 9 AI agents",
+  "version": "2.0.0",
+  "description": "BlackRoad AI Agent Network Dashboard - 9 AI agents on Raspberry Pi mesh with Stripe billing",
   "scripts": {
     "dev": "next dev -p 3030",
     "build": "next build",
-    "start": "next start",
-    "deploy": "wrangler pages deploy .next"
+    "start": "next start -p 3030",
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "^14.2.0",
     "react": "^18.3.0",
-    "react-dom": "^18.3.0"
+    "react-dom": "^18.3.0",
+    "stripe": "^14.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.42.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.3.0",
     "typescript": "^5.0.0"
