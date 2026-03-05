@@ -1,8 +1,16 @@
 import './globals.css'
+import type { Metadata, Viewport } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'BlackRoad AI - Agent Network',
-  description: '9 AI agents working together across distributed Raspberry Pi devices',
+  description: '9 AI agents working together across distributed Raspberry Pi devices — BlackRoad OS, Inc.',
+  robots: 'index, follow',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#000000',
 }
 
 export default function RootLayout({

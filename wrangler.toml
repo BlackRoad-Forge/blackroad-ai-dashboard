@@ -1,0 +1,9 @@
+name = "blackroad-ai-dashboard"
+compatibility_date = "2024-12-01"
+
+[site]
+bucket = "./out"
+
+# Cloudflare Pages static asset configuration
+# Static export from Next.js deployed to Cloudflare Pages
+# Production URL: ai.blackroad.io

@@ -30,7 +30,7 @@ export default function Home() {
     setTimeout(() => {
       setMessages([...newMessages, {
         agent: selectedAgent.name,
-        content: `Hello! I'm ${selectedAgent.name}, your ${selectedAgent.role}. I'm running on ${selected Agent.device} using ${selectedAgent.model}. How can I help with BlackRoad today?`
+        content: `Hello! I'm ${selectedAgent.name}, your ${selectedAgent.role}. I'm running on ${selectedAgent.device} using ${selectedAgent.model}. How can I help with BlackRoad today?`
       }])
     }, 1000)
     
@@ -139,7 +139,7 @@ export default function Home() {
             type="text"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
             placeholder="Type your message..."
             style={{
               flex: 1,

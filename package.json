@@ -1,21 +1,30 @@
 {
   "name": "blackroad-ai-dashboard",
   "version": "1.0.0",
+  "private": true,
   "description": "BlackRoad AI Agent Network Dashboard - Interact with 9 AI agents",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "dev": "next dev -p 3030",
     "build": "next build",
     "start": "next start",
-    "deploy": "wrangler pages deploy .next"
+    "lint": "next lint",
+    "deploy": "npm run build && wrangler pages deploy out --project-name=blackroad-ai-dashboard"
   },
   "dependencies": {
-    "next": "^14.2.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0"
+    "next": "14.2.21",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.3.0",
-    "typescript": "^5.0.0"
+    "@cloudflare/next-on-pages": "1.13.7",
+    "@types/node": "20.17.12",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5.7.3",
+    "wrangler": "3.99.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
