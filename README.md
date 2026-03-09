@@ -1,44 +1,41 @@
 # BlackRoad AI Dashboard
 
-**Live at:** ai.blackroad.io
+Real-time monitoring and chat interface for AI agents running across the BlackRoad Pi cluster. Built with Next.js and TypeScript.
 
-## 🤖 Features
+## Agents
 
-- View all 9 AI agents across 3 devices
-- Real-time agent status
+| Team | Device | Agents |
+|------|--------|--------|
+| Infrastructure | Lucidia | Lucidia (Systems Lead), Marcus (PM), Viktor (Dev), Sophia (Data) |
+| Creative | Cecilia | CECE (Creative Lead), Luna (UX), Dante (Backend) |
+| Coding | Aria | Aria-Prime (Code), Aria-Tiny (Quick Response) |
+
+## Features
+
+- Live agent status across 3 Pi nodes
 - Chat interface with each agent
-- Team organization (Infrastructure, Creative, Coding)
-- Beautiful dark mode UI
+- Team-based organization
+- Dark theme UI
 
-## 🚀 Agents
+## Development
 
-### Infrastructure Team (Lucidia)
-- Lucidia 🖤 - Systems Lead
-- Marcus 👔 - Product Manager
-- Viktor 💪 - Senior Developer
-- Sophia 📊 - Data Analyst
-
-### Creative Team (Cecilia)
-- CECE 💜 - Creative Lead
-- Luna 🌙 - UX Designer
-- Dante ⚡ - Backend Engineer
-
-### Coding Team (Aria)
-- Aria-Prime 🎯 - Code Specialist
-- Aria-Tiny ⚡ - Quick Responder
-
-## 🛠️ Development
-
-\`\`\`bash
+```bash
 npm install
 npm run dev
-\`\`\`
+```
 
-## 📦 Deployment
+## Deploy
 
-\`\`\`bash
+```bash
 npm run build
-# Deploy to Cloudflare Pages
-\`\`\`
+# Deploys to Cloudflare Pages
+```
 
-Built with Next.js 14 + TypeScript
+## Stack
+
+- Next.js 14, TypeScript, React
+- Cloudflare Pages
+
+## License
+
+Copyright 2026 BlackRoad OS, Inc. All rights reserved.
