@@ -27,13 +27,17 @@ export default function Home() {
     setMessages(newMessages)
     
     // Simulate agent response (in production, this would call your backend API)
-    setTimeout(() => {
-      setMessages([...newMessages, {
-        agent: selectedAgent.name,
-        content: `Hello! I'm ${selectedAgent.name}, your ${selectedAgent.role}. I'm running on ${selected Agent.device} using ${selectedAgent.model}. How can I help with BlackRoad today?`
-      }])
-    }, 1000)
-    
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message, device: selectedAgent.device, model: selectedAgent.model }),
+      })
+      const data = await res.json()
+      setMessages([...newMessages, { agent: selectedAgent.name, content: data.response }])
+    } catch {
+      setMessages([...newMessages, { agent: selectedAgent.name, content: "Connection failed — node may be offline" }])
+    }    
     setMessage('')
   }
 
