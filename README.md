@@ -46,3 +46,12 @@ npm run build
 ## License
 
 Copyright 2026 BlackRoad OS, Inc. All rights reserved.
+
+## Related Projects
+
+| Project | Description |
+|---------|-------------|
+| [BlackRoad Operating System](https://github.com/blackboxprogramming/BlackRoad-Operating-System) | Edge computing OS for Pi fleet |
+| [BlackRoad Desktop App](https://github.com/blackboxprogramming/blackroad-desktop-app) | Electron app for fleet management |
+| [BlackRoad Chrome Extension](https://github.com/blackboxprogramming/blackroad-chrome-extension) | Browser extension for fleet monitoring |
+| [Lucidia](https://github.com/blackboxprogramming/lucidia) | Autonomous AI agent with persistent memory |
