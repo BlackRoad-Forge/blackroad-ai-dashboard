@@ -1,5 +1,12 @@
 # BlackRoad AI Dashboard
 
+[![CI](https://github.com/blackboxprogramming/blackroad-ai-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/blackboxprogramming/blackroad-ai-dashboard/actions/workflows/ci.yml)
+[![Next.js](https://img.shields.io/badge/Next.js-14-000000.svg)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg)](https://typescriptlang.org)
+[![Ollama](https://img.shields.io/badge/Ollama-fleet-FF6B2B.svg)](https://ollama.ai)
+
+
+
 Real-time monitoring and chat interface for AI agents running across the BlackRoad Pi cluster. Built with Next.js and TypeScript.
 
 ## Agents
